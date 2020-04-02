@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>210</y>
+      <w>400</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>KipPane
+&lt;&lt; create &gt;&gt; KipPane(x, y) + Pane()
+--
+double x
+double y
+ArrayList&lt;Kippen&gt; eieren;
+--
+beweegKip(KipRichting richting)
+bepaalRichting(KeyEvent pressedKey)
+legEi()
+getAantalEieren()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>180</y>
+      <w>240</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Ren
+&lt;&lt; create &gt;&gt; RenPane() + Pane()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>320</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Ei
+--
+double x
+double y
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>290</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>KipRichting: enum
+--
+LINKS
+RECHTS
+BOVEN
+BENEDEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
