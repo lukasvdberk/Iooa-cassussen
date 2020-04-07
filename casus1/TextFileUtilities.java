@@ -36,6 +36,8 @@ public class  TextFileUtilities {
             for (String woord : frequentieWoorden.keySet()) {
                 fileWriter.write(woord + ":" + frequentieWoorden.get(woord) + "\n");
             }
+        } catch(Exception e) {
+            System.out.println("Er ging iets fout!")
         }
     }
 }
