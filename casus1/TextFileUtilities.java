@@ -1,4 +1,4 @@
-package com.company;
+package casus1;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -37,7 +37,7 @@ public class  TextFileUtilities {
                 fileWriter.write(woord + ":" + frequentieWoorden.get(woord) + "\n");
             }
         } catch(Exception e) {
-            System.out.println("Er ging iets fout!")
+            System.out.println("Er ging iets fout!");
         }
     }
 }

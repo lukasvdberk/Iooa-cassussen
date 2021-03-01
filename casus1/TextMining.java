@@ -1,4 +1,4 @@
-package com.company;
+package casus1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,13 +17,15 @@ public class TextMining {
                 if(!woord.equals("")) {
                     if(!word2frequency.containsKey(woord)) {
                         word2frequency.put(woord, 1);
-                    }
-                    int aantal = word2frequency.get(woord);
+                    } else {
+                        int aantal = word2frequency.get(woord);
 
-                    // Replace the previous word with the new counter
-                    word2frequency.remove(woord);
-                    aantal+= 1;
-                    word2frequency.put(woord, aantal);
+                        // Replace the previous word with the new counter
+                        word2frequency.remove(woord);
+                        aantal+= 1;
+                        System.out.println(aantal);
+                        word2frequency.put(woord, aantal);
+                    }
                 }
             }
         }
